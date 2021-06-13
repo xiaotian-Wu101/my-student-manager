@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aliceblue;
+}
+.header{
+    position: relative;
+    height: 70px;
+    width: 100%;
+    background-color: #3c3ddc;
+    line-height: 70px;
+}
+.header img{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.header span{
+    font-size: 20px;
+    color: azure;
+}
+.header #logReg{
+    
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    z-index: 3;
+    width: 100px;
+    height: 70px;
+}
+.header #logReg button{
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.left{
+    width: 200px;
+    height:calc(100vh - 70px);
+    background-color: cornflowerblue;
+    line-height: 70px;
+    font-weight: bold;
+}
+.left dd{
+    width: 200px;
+    height: 70px;
+    text-align: center;
+}
+dt{
+    text-align: left;
+    text-indent: 1em;
+}
+.left a{
+    text-decoration: none;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    color: #fff;
+    display: block;
+}
+.active{
+    background-color: #f2b4c2;
+    color: #3c3ddc;
+}
+.right{
+    position: absolute;
+    left: 200px;
+    top: 70px;
+    width: calc(100% - 200px);
+    height: calc(100vh - 70px);
+    overflow: hidden;
+}
+.right div{
+    height: 1000px;
+    overflow: hidden;
+}
+.right form{
+   
+    margin: 20px auto;
+    width: 400px;
+    height: 600px;
+}
+.right form div{
+    height: 30px;
+    width: 400px;
+}
+.right form div label:not(.sex){
+    width: 100px;
+    display: inline-block;
+    text-align:right;
+}
+.right .btn{
+    cursor: pointer;
+    padding: 5px 23px;
+    
+}
+.right table{
+    width: 100%;
+    line-height: 30px;
+    overflow:scroll;
+    text-align: center;
+}
+.right table thead{
+    background-color: antiquewhite;
+}
+.right table tbody{
+    background-color: #fff;
+}
+.right table tbody td{
+    font-weight: lighter;
+    font-family: cursive;
+    
+}
+.right table tbody button{
+    border: none;
+    height: 30px;
+    width: 60px;
+    outline: none;
+    cursor: pointer;
+}
+.right table tbody #alterBtn{
+    background-color: greenyellow;
+}
+.right table tbody #deleteBtn{
+    background-color: red;
+}
+.model{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0, 0, 0.5);
+    display: none;
+}
+.model .model-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -350px;
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    padding: 20px;
+}
